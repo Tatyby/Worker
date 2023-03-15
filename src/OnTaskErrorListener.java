@@ -1,4 +1,4 @@
 @FunctionalInterface
 public interface OnTaskErrorListener {
-    int onError();
+    void onError(String result);
 }

@@ -9,8 +9,8 @@ public class Worker {
 
     public void start(){
         for(int i=0; i<100; i++){
-            if(i==errorCallback.onError()){
-                System.out.println("Task " + i + " is error");
+            if(i==33){
+                errorCallback.onError("Task " + i + " is Error");
             }
             else {
                 callback.onDone("Task " + i + " is Done");
